@@ -12,8 +12,11 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],   # Open for frontend on any domain (Vercel, localhost, etc.)
-    allow_credentials=False,
+    allow_origins=[
+        "http://localhost:3000",
+        "https://ai-website-analysis.vercel.app",
+    ],
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
