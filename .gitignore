@@ -1,0 +1,19 @@
+# Credentials — never commit
+.env
+
+# Python
+venv/
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+
+# Generated files
+static/screenshots/
+static/axe.min.js
+
+# IDE
+.DS_Store
+*.log
